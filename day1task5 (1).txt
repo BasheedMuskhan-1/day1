@@ -1,0 +1,64 @@
+//02-11-2020----day 1------ task 5//
+
+import java.util.Scanner;
+public class Number {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		int add;
+		int arev=0,brev=0,crev=0;int n=0;
+		int arem=0,brem=0,crem=0;
+		int resulta;
+		int resultb;
+		int resultc;
+		while(a!=0&&b!=0&&c!=0)
+		{
+			arem=a%10;
+			brem=b%10;
+			crem=c%10;
+		}
+		if((arem%2==0 && brem%2==0 && crem%2==0)||(arem%2!=0 && brem%2!=0 && crem%2!=0)) 
+		{
+			add=a+b+c;
+			System.out.println("addition of three numbers="+add);
+		}
+		else if(arem%2!=0)
+		{
+			{
+				n=a%10;
+				arev=arev*10+n;
+				a=a%10;
+			}
+			resulta=arev+b+c;
+			System.out.println("result="+resulta);
+			}
+		else if(brem%2!=0)
+		{
+			{
+				n=b%10;
+				brev=brev*10+n;
+				b=b%10;
+			}
+			resultb=brev+a+c;
+			System.out.println("result="+resultb);
+			}
+		else if(crem%2!=0)
+		{
+			{
+				n=c%10;
+				crev=crev*10+n;
+				c=c%10;
+			}
+			resultc=crev+b+a;
+			System.out.println("result="+resultc);
+			}
+		else {
+			System.out.println("end");
+		}
+		
+	}
+
+}

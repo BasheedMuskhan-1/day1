@@ -1,0 +1,23 @@
+//02-11-2020----day 1------ task 3//
+
+import java.util.Scanner;
+public class Test {
+	static int a=50;
+	int b=20;
+	public static void main(String args[]) {
+		int c;
+		Test sc=new Test();
+		c=a+sc.b;
+		System.out.println("addition="+c);
+		c=a-sc.b;
+		System.out.println("subtraction="+c);
+		c=a/sc.b;
+		System.out.println("division="+c);
+		c=a*sc.b;
+		System.out.println("multiplication="+c);
+		c=a%sc.b;
+		System.out.println("modular="+c);
+		
+	}
+
+}

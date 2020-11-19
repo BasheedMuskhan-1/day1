@@ -1,0 +1,37 @@
+//02-11-2020----day 1------ task 4//
+
+public class Student {
+static int marks;
+static int percentage;
+static int a=80;
+static int b=70;
+static int c=60;
+
+public static void main(String[] args) {
+	marks=a+b+c;
+	System.out.println("Totalmarks=" +marks);
+	percentage=(marks/3);
+	System.out.println("%="+percentage);
+	if(percentage>=75)
+	{
+	    System.out.println("A grade");
+		System.out.println("First class");
+	}
+	else if(percentage<75 && percentage>=65)
+	{
+		System.out.println("B grade");
+		System.out.println("second class");
+	}
+	else if(percentage<65 && percentage>=35)
+	{
+		System.out.println("c grade");
+		System.out.println("third class");
+	}
+	else
+	{
+		System.out.println("D grade");
+		System.out.println("fail");
+	}
+}
+}
+

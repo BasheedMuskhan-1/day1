@@ -1,0 +1,47 @@
+
+//02-11-2020----day 1------ task 2//
+public class Operator
+{
+ public static void main(String[] args)
+ {
+int a=8, b=4,c,d;
+//Arithmetic operator
+System.out.println("addition of two numbers" + (a+b));
+System.out.println("subtract of two numbers" + (a-b));
+System.out.println("multiply two numbers" + (a*b));
+System.out.println("division of two numbers" + (a/b));
+System.out.println("modular division of two numbers " +(a%b));
+//Assignment operator
+c=a;
+System.out.println("c using =" +c);
+c+=a;
+System.out.println("c using +=" +c);
+c*=a;
+System.out.println("c using *=" +c);
+//relational operator
+System.out.println(a==b);
+System.out.println(a!=b);
+System.out.println(a>b);
+System.out.println(a<b);
+System.out.println(a>=b);
+System.out.println(a<=b);
+//logical operators
+System.out.println((6>4) && (9>5));
+System.out.println((6>4) && (9<5));
+System.out.println((6<4) || (9>5));
+System.out.println((6<4) || (9<5));
+System.out.println(!(6==4));
+System.out.println(!(6>4));
+c=++a;
+System.out.println("after increment " + c);
+d=--b;
+System.out.println("after decrement " +d);
+//Bitwise operators
+System.out.println(a&b);
+System.out.println(a|b);
+System.out.println(~a);
+System.out.println(a>>2);
+System.out.println(a<<1);
+  }
+}
+

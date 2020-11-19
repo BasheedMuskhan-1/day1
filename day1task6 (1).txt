@@ -1,0 +1,108 @@
+//02-11-2020----day 1------ task 6//
+import java.util.Scanner;
+public class Check {
+
+	public static void main(String arg[]) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number:");
+		int ch,k;
+		while(true) {
+			System.out.println("1.prime");
+			System.out.println("2.palindrome");
+			System.out.println("3.perfect");
+			System.out.println("4.armstrong");
+			System.out.println("5.quit");
+			ch=sc.nextInt();
+			
+			switch(ch)
+			{
+			case 1:
+				//System.out.println("enter a number:");
+				k=sc.nextInt();
+				int d=2;
+				boolean b=true;
+				while(d<=k/2)
+				{
+					if(k%d==0)
+					{
+						b=false;
+						break;
+					}
+					d++;
+				}
+				if(b)
+				{
+					System.out.println(k + "is a prime");
+				}
+				else
+				{
+					System.out.println(k +"is not a prime");
+				}
+				
+			case 2:
+				//System.out.println("enter a number:");
+				k=sc.nextInt();
+				int rev=0,temp=k;
+				while(temp>0)
+				{
+					rev=(rev*10)+(temp%10);
+					temp=temp/10;
+				}
+				if(k==rev)
+				{
+					System.out.println(k +"is  a palindrome");	
+				}
+				else
+				{
+					System.out.println(k +"is not  a palindrome");
+				}
+				
+			case 3:
+				//System.out.println("enter a number:");
+				k=sc.nextInt();
+				int sum=0;int i;
+				for(i=1;i<k;i++)
+				{
+					if(k%i==0)
+					{
+					 sum=sum+i;	
+					}
+				}
+				if(sum==k) {
+					System.out.println(k +"is  a perfect");
+				}
+				else
+				{
+					System.out.println(k +"is not a perfect");
+				}
+				
+			case 4:
+				//System.out.println("enter a number:");
+				k=sc.nextInt();
+				int rem=0;double result=0;
+				while(k!=0)
+				{
+					rem=k%10;
+					result=result+Math.pow(rem, 3);
+					k=k/10;
+				}
+				if(result==k)
+				{
+					System.out.println(k +"is  armstrong");
+				}
+				else
+				{
+					System.out.println(k +"is not an armstrong");
+				}
+				
+			case 5:
+				System.out.println("quit");
+				
+			default:
+			System.out.println("end of program");
+				}
+			}
+		}
+	}
+
